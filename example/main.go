@@ -9,6 +9,6 @@ func main() {
 	repo := ght.GetRepoInf("go")
 
 	for i, r := range repo {
-		fmt.Printf("%d : %s\n", i+1, r.Name)
+		fmt.Printf("%3d  %-40s  %4s %4s\n", i+1, r.Name, r.Star, r.Fork)
 	}
 }
